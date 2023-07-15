@@ -34,19 +34,27 @@
                     </div>
                     <div class=" pt-10 pb-20 px-4 w-full grid grid-cols-2 gap-5" v-if="show && !loading">
                         <div class=" flex flex-col items-start space-y-2">
-                            <span class=" text-xl font-bold text-[#222222]">Price in TT:</span>
+                            <span class=" text-xl font-bold text-[#FB7701]">Price in TT:</span>
                             <span class=" text-lg text-gray-500 font-medium">{{price_in_tt}}</span>
                         </div>
                         <div class=" flex flex-col items-start space-y-2">
-                            <span class=" text-xl font-bold text-[#222222] ">Customs and Duties:</span>
-                            <span class=" text-lg text-gray-500 font-medium">${{customs_and_duties}}</span>
+                            <span class=" text-xl font-bold text-[#FB7701] ">Customs:</span>
+                            <span class=" text-lg text-gray-500 font-medium">${{Customs}}</span>
                         </div>
                         <div class=" flex flex-col items-start space-y-2">
-                            <span class=" text-xl font-bold text-[#222222] ">Service Fee:</span>
-                            <span class=" text-lg text-gray-500 font-medium">${{service_fee}}</span>
+                            <span class=" text-xl font-bold text-[#FB7701] ">Duty :</span>
+                            <span class=" text-lg text-gray-500 font-medium">${{Duty}}</span>
                         </div>
                         <div class=" flex flex-col items-start space-y-2">
-                            <span class=" text-xl font-bold text-[#222222] ">Total:</span>
+                            <span class=" text-xl font-bold text-[#FB7701] ">Sales tax:</span>
+                            <span class=" text-lg text-gray-500 font-medium">${{SalesTax}}</span>
+                        </div>
+                         <div class=" flex flex-col items-start space-y-2">
+                            <span class=" text-xl font-bold text-[#FB7701] ">Vat:</span>
+                            <span class=" text-lg text-gray-500 font-medium">${{Vat}}</span>
+                        </div>
+                         <div class=" flex flex-col items-start space-y-2">
+                            <span class=" text-xl font-bold text-[#FB7701] ">Total:</span>
                             <span class=" text-lg text-gray-500 font-medium">${{total}}</span>
                         </div>
                     </div>
@@ -68,8 +76,10 @@ import { ref } from "vue";
  const items = ref(null);
 
  const price_in_tt = ref(null);
- const customs_and_duties = ref(null);
- const service_fee = ref(null);
+ const Customs = ref(null);
+ const Duty = ref(null);
+ const SalesTax = ref(null);
+ const Vat = ref(null)
  const total = ref(null);
 
  const Calculate = () => {
@@ -78,13 +88,16 @@ import { ref } from "vue";
     setTimeout(() =>{
         loading.value = false;
         // Price in TT = Price in USD x 7
-        // Customs and Duties = 35 * number of items
-        // Service Fee = 150
-        // Total = Sum of above
+        // Customs = 20 x items
+        // Duty = 5
+        // Sales tax = 5
+        // Vat = 5
         price_in_tt.value = price.value * 7;
-        customs_and_duties.value = 35 * items.value;
-        service_fee.value = 150;
-        total.value = price_in_tt.value + customs_and_duties.value + service_fee.value;
+        Customs.value = 20 * items.value;
+        Duty.value = 5;
+        SalesTax.value = 5;
+        Vat.value = 5;
+        total.value = price_in_tt.value + Customs.value + Duty.value + SalesTax.value + Vat.value;
         show.value = true;
     },600)
  }
