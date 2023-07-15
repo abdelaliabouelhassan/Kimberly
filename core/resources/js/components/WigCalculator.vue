@@ -39,20 +39,20 @@
                             <span class="sr-only">Loading...</span>
                         </div>
                     </div>
-                    <div class=" pt-10 pb-20 px-4 w-full grid grid-cols-2 gap-5" v-if="show && !loading">
-                        <div class=" flex flex-col items-start space-y-2">
+                    <div class=" pt-10 pb-20 px-4 w-full grid grid-cols-2 gap-y-5" v-if="show && !loading">
+                        <div class="  flex items-center space-x-2">
                             <span class=" text-xl font-bold text-[#9B309D]">Price in TT:</span>
-                            <span class=" text-lg text-gray-500 font-medium">{{price_in_tt}}</span>
+                            <span class=" text-lg text-gray-500 font-medium">${{price_in_tt}}</span>
                         </div>
-                        <div class=" flex flex-col items-start space-y-2">
-                            <span class=" text-xl font-bold text-[#9B309D] ">Customs and Duties:</span>
-                            <span class=" text-lg text-gray-500 font-medium">${{customs_and_duties}}</span>
+                        <div class="  flex items-center space-x-2">
+                            <span class=" text-xl font-bold text-[#9B309D] whitespace-nowrap ">Customs & Duties: <span  class=" text-lg text-gray-500 font-medium">${{customs_and_duties}}</span></span>
+                            
                         </div>
-                        <div class=" flex flex-col items-start space-y-2">
+                        <div class="  flex items-center space-x-2">
                             <span class=" text-xl font-bold text-[#9B309D] ">Service Fee:</span>
                             <span class=" text-lg text-gray-500 font-medium">${{service_fee}}</span>
                         </div>
-                        <div class=" flex flex-col items-start space-y-2">
+                        <div class="  flex items-center space-x-2">
                             <span class=" text-xl font-bold text-[#9B309D] ">Total:</span>
                             <span class=" text-lg text-gray-500 font-medium">${{total}}</span>
                         </div>

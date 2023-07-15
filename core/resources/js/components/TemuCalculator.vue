@@ -33,27 +33,27 @@
                         </div>
                     </div>
                     <div class=" pt-10 pb-20 px-4 w-full grid grid-cols-2 gap-5" v-if="show && !loading">
-                        <div class=" flex flex-col items-start space-y-2">
+                        <div class="  flex items-center space-x-2">
                             <span class=" text-xl font-bold text-[#FB7701]">Price in TT:</span>
-                            <span class=" text-lg text-gray-500 font-medium">{{price_in_tt}}</span>
+                            <span class=" text-lg text-gray-500 font-medium">${{price_in_tt}}</span>
                         </div>
-                        <div class=" flex flex-col items-start space-y-2">
+                        <div class="  flex items-center space-x-2">
                             <span class=" text-xl font-bold text-[#FB7701] ">Customs:</span>
                             <span class=" text-lg text-gray-500 font-medium">${{Customs}}</span>
                         </div>
-                        <div class=" flex flex-col items-start space-y-2">
+                        <div class="  flex items-center space-x-2">
                             <span class=" text-xl font-bold text-[#FB7701] ">Duty :</span>
                             <span class=" text-lg text-gray-500 font-medium">${{Duty}}</span>
                         </div>
-                        <div class=" flex flex-col items-start space-y-2">
+                        <div class="  flex items-center space-x-2">
                             <span class=" text-xl font-bold text-[#FB7701] ">Sales tax:</span>
                             <span class=" text-lg text-gray-500 font-medium">${{SalesTax}}</span>
                         </div>
-                         <div class=" flex flex-col items-start space-y-2">
+                         <div class="  flex items-center space-x-2">
                             <span class=" text-xl font-bold text-[#FB7701] ">Vat:</span>
                             <span class=" text-lg text-gray-500 font-medium">${{Vat}}</span>
                         </div>
-                         <div class=" flex flex-col items-start space-y-2">
+                         <div class="  flex items-center space-x-2">
                             <span class=" text-xl font-bold text-[#FB7701] ">Total:</span>
                             <span class=" text-lg text-gray-500 font-medium">${{total}}</span>
                         </div>
