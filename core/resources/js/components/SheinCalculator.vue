@@ -34,27 +34,31 @@
                     </div>
                     <div class=" pt-10 pb-20 px-4 w-full grid grid-cols-2 gap-5" v-if="show && !loading">
                         <div class=" flex items-center space-x-2 ">
-                            <span class=" text-xl font-bold text-[#FB7701]">Price in TT:</span>
+                            <span class=" text-xl font-bold text-[#222222]">Price in TT:</span>
                             <span class=" text-lg text-gray-500 font-medium">${{price_in_tt}}</span>
                         </div>
                         <div class="  flex items-center space-x-2">
-                            <span class=" text-xl font-bold text-[#FB7701] ">Customs:</span>
+                            <span class=" text-xl font-bold text-[#222222] ">Customs:</span>
                             <span class=" text-lg text-gray-500 font-medium">${{Customs}}</span>
                         </div>
                         <div class="  flex items-center space-x-2">
-                            <span class=" text-xl font-bold text-[#FB7701] ">Duty :</span>
+                            <span class=" text-xl font-bold text-[#222222] ">Duty :</span>
                             <span class=" text-lg text-gray-500 font-medium">${{Duty}}</span>
                         </div>
                         <div class="  flex items-center space-x-2">
-                            <span class=" text-xl font-bold text-[#FB7701] ">Sales tax:</span>
+                            <span class=" text-xl font-bold text-[#222222] ">Sales tax:</span>
                             <span class=" text-lg text-gray-500 font-medium">${{SalesTax}}</span>
                         </div>
                          <div class="  flex items-center space-x-2">
-                            <span class=" text-xl font-bold text-[#FB7701] ">Vat:</span>
+                            <span class=" text-xl font-bold text-[#222222] ">Vat:</span>
                             <span class=" text-lg text-gray-500 font-medium">${{Vat}}</span>
                         </div>
                          <div class="  flex items-center space-x-2">
-                            <span class=" text-xl font-bold text-[#FB7701] ">Total:</span>
+                            <span class=" text-xl font-bold text-[#222222] ">Service Fee:</span>
+                            <span class=" text-lg text-gray-500 font-medium">${{service_fee}}</span>
+                        </div>
+                         <div class="  flex items-center space-x-2">
+                            <span class=" text-xl font-bold text-[#222222] ">Total:</span>
                             <span class=" text-lg text-gray-500 font-medium">${{total}}</span>
                         </div>
                     </div>
@@ -80,6 +84,7 @@ import { ref } from "vue";
  const Duty = ref(null);
  const SalesTax = ref(null);
  const Vat = ref(null)
+ const service_fee = ref(null)
  const total = ref(null);
 
  const Calculate = () => {
@@ -97,7 +102,8 @@ import { ref } from "vue";
         Duty.value = 5;
         SalesTax.value = 5;
         Vat.value = 5;
-        total.value = price_in_tt.value + Customs.value + Duty.value + SalesTax.value + Vat.value;
+        service_fee.value = 150
+        total.value = price_in_tt.value + Customs.value + Duty.value + SalesTax.value + Vat.value + service_fee.value
         show.value = true;
     },600)
  }
