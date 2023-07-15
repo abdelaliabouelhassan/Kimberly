@@ -13,7 +13,7 @@
         @vite('resources/css/app.css')
         @vite('resources/js/app.js')
     </head>
-    <body class="antialiased pb-10 space-y-40 ">
+    <body class="antialiased pb-10 space-y-20 sm:space-y-40 ">
         {{-- style="background-image: url(/images/bg1624786138.png);    background-position: center;background-size: cover;background-repeat: no-repeat;" --}}
       <div class=" w-full p-5 md:p-10">
         <div class=" w-full pt-[100px] pb-[175px] overflow-hidden px-8 bg-gradient-to-r from-orange-600 to-orange-300 rounded-3xl md:rounded-[50px]" >
@@ -24,7 +24,12 @@
                     </div>
                     <h1 class=" text-white font-semibold text-xl  sm:text-6xl ">Kimberly Personal Ordering Services</h1>
                     <span class=" text-base sm:text-lg text-white text-opacity-75 font-medium">Welcome to Kimberly Personal Ordering Services! In a fast-paced world where convenience is key, we revolutionize your online ordering experience. Our dedicated team ensures that your needs and preferences are met . With our user-friendly calculator , you can effortlessly see how much it will cost to order your packages. Say goodbye to the hassle and wasted hours—and enjoy the stress-free, personalized, and reliable online ordering with Kimberly Personal Ordering Services.</span>
-                   
+                    <div class=" flex items-center space-x-2 pt-10">
+                     <span class="text-white text-base sm:text-2xl font-bold"> Find us on Instagram</span>
+                      <a href="https://instagram.com/style_by_kimmy_boutique" target="_blank">
+                        <img src="{{asset('images/instagram.png')}}" class=" w-[60px]" alt="">
+                      </a>
+                    </div>
                 </div>
                 <div class="  pt-10 lg:pt-0">
                     <img src="/images/header-right-image-home-031616246925.png" class=" max-w-md lg:max-w-2xl lg:absolute top-0 -right-[21rem]" alt="">
@@ -72,8 +77,8 @@
       </section>
 
       <section class="w-full" >
-        <div class=" px-4 md:p-8 text-center  mt-8">
-            <p class="text-3xl font-bold mb-4">** <a href="https://wa.me/18682944117" class=" text-orange-600 underline">Whatsapp me to get bank information</a> **</p>
+        <div class=" px-2 sm:p-8 text-center  sm:mt-8 whitespace-nowrap">
+            <p class=" text-lg sm:text-3xl font-bold mb-4">** <a href="https://wa.me/18682944117" class=" whitespace-nowrap text-orange-600 underline">Whatsapp me to get bank information</a> **</p>
           </div>
       </section>
     </body>

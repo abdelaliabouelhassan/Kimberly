@@ -6,9 +6,14 @@
                         </div>
     
                         <div class=" w-full absolute top-5 flex flex-col items-center space-y-4 left-0 py-2">
-                            <h1 class=" text-white text-5xl uppercase font-bold">Wig</h1>
-                            <div class=" w-28 h-28 rounded-full ring ring-[#b437b6]  overflow-hidden">
+                            <h1 class=" text-white text-center whitespace-nowrap text-4xl sm:text-5xl uppercase font-bold">wigs & phones</h1>
+                            <div class=" flex items-center space-x-2 pt-2 sm:pt-0">
+                                <div class=" w-28 h-28 rounded-full ring ring-[#b437b6]  overflow-hidden">
                                 <img src="/images/wig.jpeg" class=" w-full h-full" alt="">
+                            </div>
+                            <div class=" w-28 h-28 rounded-full ring ring-[#b437b6]  overflow-hidden">
+                                <img src="/images/phone.jpeg" class=" w-full h-full" alt="">
+                            </div>
                             </div>
                         </div>
 
