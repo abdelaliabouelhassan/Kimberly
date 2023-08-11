@@ -100,9 +100,13 @@
             <h1 class=" text-center text-4xl sm:text-6xl font-medium">Calculator</h1>
             <div class=" w-full flex flex-wrap justify-center items-center gap-y-20 gap-x-5">
                 {{-- Temu calculator --}}
-                <temu-calculator></temu-calculator>
+                {{-- <temu-calculator></temu-calculator> --}}
+                {{-- Amazon calculator --}}
+                <amazon-calculator></amazon-calculator>
                 {{-- Shein calculator  --}}
-                <shein-calculator></shein-calculator>
+                {{-- <shein-calculator></shein-calculator> --}}
+                {{-- Shein and Temu calculator --}}
+                <shein-and-temu-calculator></shein-and-temu-calculator>
                 {{-- Wig Calculator --}}
                 <wig-calculator></wig-calculator>
                 

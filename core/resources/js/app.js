@@ -18,9 +18,13 @@ const app = createApp({});
 import TemuCalculator from './components/TemuCalculator.vue';
 import SheinCalculator from './components/SheinCalculator.vue';
 import WigCalculator from './components/WigCalculator.vue';
+import SheinAndTemuCalculator from './components/SheinAndTemuCalculator.vue';
+import AmazonCalculator from './components/AmazonCalculator.vue';
 app.component('temu-calculator', TemuCalculator);
 app.component('shein-calculator', SheinCalculator);
 app.component('wig-calculator', WigCalculator);
+app.component('shein-and-temu-calculator', SheinAndTemuCalculator);
+app.component('amazon-calculator', AmazonCalculator);
 
 /**
  * The following block of code may be used to automatically register your
