@@ -80,17 +80,16 @@
             </div>
             <div class="p-8 bg-[#f5fbff] rounded-xl max-w-[800px] mx-auto">
                 <p class="text-xl  text-[#2EBF6D] font-bold mb-4">Your total cost includes customs taxes and my service fee.</p>
-                <p class="mb-4  text-opacity-80 text-lg">If your order is over $1000, you will pay in full. If your total is under $1000, you will pay half of the total upfront. Once the items arrive and you receive them, you will pay the remaining half.</p>
-                <p class="mb-4  text-opacity-80 text-lg">There are courier services available to deliver your packages. The rates range between $40 and $60. Alternatively, you can opt for TTPost delivery, which costs $30.</p>
+                {{-- <p class="mb-4  text-opacity-80 text-lg">If your order is over $1000, you will pay in full. If your total is under $1000, you will pay half of the total upfront. Once the items arrive and you receive them, you will pay the remaining half.</p> --}}
+                <p class="mb-4  text-opacity-80 text-lg">There are courier services available to deliver your packages. The rates range between $40 and $60. Alternatively, you have the option for TTPost delivery, which costs $30.</p>
                 <p class="mb-4  text-opacity-80 text-lg">Meet-up points are also available for both collection and payments at the following locations:</p>
                 <ul class="list-disc pl-8 mb-4">
-                  <li class=" text-[#2EBF6D] ">Port of Spain</li>
-                  <li class=" text-[#2EBF6D]">St. James</li>
-                  <li class=" text-[#2EBF6D]">Morvant Junction</li>
+                  <li class=" text-[#2EBF6D] ">Curepe at my location</li>
+                  <li class=" text-[#2EBF6D]">St. James by forensic science center.</li>
                 </ul>
                 <p class="mb-4 text-lg">Online banking, bank deposits (fast deposit), or Western Union/MoneyGram are the other available payment options.</p>
               </div>
-              
+            
         </div>
       </section>
 
