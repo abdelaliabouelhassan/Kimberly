@@ -72,7 +72,7 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { onMounted, ref } from "vue";
  const loading = ref(false);
  const show = ref(false)
  const price = ref(null);
@@ -106,4 +106,8 @@ import { ref } from "vue";
         show.value = true;
     },600)
  }
+
+ onMounted(() => {
+    console.log('tesr')
+ })
 </script>

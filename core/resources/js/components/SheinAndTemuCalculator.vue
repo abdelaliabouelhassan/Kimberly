@@ -106,7 +106,7 @@ import { ref } from "vue";
         // Sales tax = 5
         // Vat = 5
         price_in_tt.value = price.value * 7;
-        Customs.value = 37 * items.value;
+        Customs.value = 40 * items.value;
         Duty.value = 5;
         SalesTax.value = 5;
         Vat.value = 5;
